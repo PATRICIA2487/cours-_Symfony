@@ -18,8 +18,8 @@ class ProductType extends AbstractType
             ->add('ProductName', TextType::class, [
                 'label' => "Nom du produit",
                 'constraints' => [
-                        new Length(['min' => 5, 'max' => 20])
-                    ]
+                    new Length(['min' => 5, 'max' => 20])
+                ]
             ])
             ->add('productPrice',)
             ->add('productType')
