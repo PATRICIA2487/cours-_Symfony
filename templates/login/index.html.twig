@@ -24,6 +24,8 @@
         <button class= btn btn-success type="submit">login</button>
     </form>
 
-    <a href= "{{path('app_forgot_password_request')}}">Mot de passe oublié<a/> 
+<!--    {% if (is_granted('IS_AUTHENTICADED'))%}  -->
+<a href= "{{path('app_forgot_password_request')}}">Mot de passe oublié<a/> 
+<!--    {% endif %}  -->
 </div>    
 {% endblock %}
